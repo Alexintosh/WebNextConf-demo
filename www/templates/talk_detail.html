@@ -1,0 +1,24 @@
+<ion-view title="{{talk.title}}">
+  <ion-content class="has-header" overflow-scroll="true">
+    <div class="list card">
+      <div class="item item-avatar">
+        <img src="{{talk.author.avatarUrl}}">
+        <h2>{{talk.author.firstname}} {{talk.author.lastname}}</h2>
+        <p><i class="icon ion-android-time"></i> {{talk.time | date:'h:mm':001}}</p>
+      </div>
+
+      <div class="item item-body">
+        <p>
+          {{talk.description}}
+        </p>
+      </div>
+
+      <div class="item tabs tabs-secondary tabs-icon-left" ng-if="talk.author.twitter">
+        <a class="tab-item" href="http://twitter.com/{{talk.author.twitter}}">
+          <i class="icon ion-social-twitter"></i>
+        </a>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

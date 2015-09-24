@@ -1,0 +1,19 @@
+<ion-view title="Contacts">
+  <ion-content class="has-header" overflow-scroll="true">
+	<div class="list">
+		<div class="item item-divider primary-dark-bg">
+			<i class="icon ion-map"></i> Web European Conference
+		</div>
+		<div class="">
+			<ui-gmap-google-map center='map.center' zoom='map.zoom' ng-if="showMap" pan="true">
+					<ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id"></ui-gmap-marker>
+			</ui-gmap-google-map>
+			<p class="padded">
+      Universita' degli studi di Milano - Bicocca - Building U6 <br/>
+      Piazza dell'Ateneo Nuovo, 1 - 20126 Milano <br/>
+      info@webnextconf.eu <br/>
+			</p>
+      		</div>
+	</div>
+</ion-content>
+</ion-view>

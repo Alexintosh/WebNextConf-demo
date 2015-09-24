@@ -1,0 +1,11 @@
+<ion-view title="{{title}}">
+  <ion-content>
+    <div class="list">
+      <a class="item item-avatar" ng-repeat="talk in room track by $index"  href="#/app/talk/{{talk._id}}">
+        <img ng-src="{{talk.author.avatarUrl}}"/>
+        <h2>{{talk.title}}</h2>
+        <p><i class="icon ion-android-time"></i> {{talk.time | date:'h:mm':001}}</p>
+      </a>
+  </div>
+  </ion-content>
+</ion-view>
